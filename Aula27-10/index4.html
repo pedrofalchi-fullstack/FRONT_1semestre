@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mostrarHora() {
+        const d = new Date(); // uma nova instância
+        var t = d.toLocaleTimeString(); // obtém a hora local como uma string
+        document.getElementById("hora").innerText = t;
+        }
+        x = setInterval(mostrarHora, 1000); // atualiza a cada segundo
+
+
+    </script>
+</head>
+<body>
+    <p id="hora"></p>
+</body>
+</html>

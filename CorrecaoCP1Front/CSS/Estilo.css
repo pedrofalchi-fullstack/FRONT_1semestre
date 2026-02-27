@@ -1,0 +1,42 @@
+#wrapper{
+    width: 1290px;
+    height: 1300px;
+    background: black;
+}
+div{
+    width: 70px;
+    height: 70px;
+    background: black;
+    margin-left: 1px;
+    margin-top: 1px;    
+    float: left;
+    text-align: center;
+    line-height: 70px;
+    font-size: 13px;
+    font-family: arial;
+}
+ 
+.Root-Element{
+    background-color: chartreuse;
+}
+.Tabular-Data{
+    background-color: bisque;
+}
+.Metadata-and-Scripting{
+    background-color: rgb(3, 101, 200);
+}
+.Text-Level-Semantics{
+    background-color: rgb(244, 209, 33);
+}
+.Group-Content{
+    background-color: orange;
+}
+.Forms{
+    background-color:green
+}
+.Document-Sections{
+    background-color: rgb(69, 255, 252);
+}
+.Interactive-Elements{
+    background-color: gray;
+}

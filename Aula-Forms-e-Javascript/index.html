@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilo/Estilo.css">
+</head>
+<body>
+    <h1>Trabalhando com Formulários</h1>
+    <form name="frmCadastro" method="post">
+        <label for="txtNome">Nome: </label>
+        <input type="text" name="txtNome" id="txtNome" >
+        <br>
+        <label for="txtEmail">E-Mail:</label>
+        <input type="email" name="txtEmail" id="txtEmail" >
+        <br>
+        <label for="pwdSenha">Senha: </label>
+        <input type="password" name="pwdSenha" id="pwdSenha" >
+        <br>
+        <label for="telefone">Telefone: </label>
+        <input type="tel" name="telefone" id="telefone" >
+        <br>
+        <label for="txtCPF">CPF:</label>
+        <input type="text" name="txtCPF" id="txtCPF" maxlength="14" >
+        <br>
+        <label for="txtDataNasc">Data de Nascimento 01: </label>
+        <input type="date" name="txtDataNasc01" id="txtDataNasc01" max="10-16-2025" min="2025-01-03" >
+        <br>
+        <label for="txtDataNasc">Data de Nascimento: 02: </label>
+        <input type="datetime-local" name="txtDataNasc02" id="txtDataNasc02" max="10-16-2025" min="2025-01-03" >
+        <br>
+        <label for="txtHorario">Horário: </label>
+        <input type="time" name="txtHorario" id="txtHorario" value="21:45" >
+        <br>
+        <label>Arquivo: </label>
+        <input type="file" name="arquivo" accept=".pdf, .docx, .png, .jpg" multiple>
+        <br>
+        <label>Dependentes: </label>
+        <input type="number" name="txtDependentes" id="txtDependentes" min="0" max="20" value="0" step="1" >
+        <br>
+        <label>Gênero: </label>
+        <input type="radio" name="rdoGenero" id="rdoMasc" value="M" ><label for="rdoGenero">Masculino</label>
+        <input type="radio" name="rdoFem" id="rdoFem" value="F" ><label for="rdoFem">Feminino</label>
+        <input type="radio" name="rdoOutros" id="rdoOutros" value="0" checked><label for="rdoOutros">Outros</label>
+        <br>
+        <label for="chkTermos">Aceite os termos</label>
+        <input type="checkbox" name="chkTermos" value="S" >
+        <br>
+        <label for="chkTermos">Area de interesse</label>
+        <input type="checkbox" name="chkTeck" id="chkTech" value="Tech" ><label for="chkTech">Tech</label>
+        <input type="checkbox" name="chkGames" id="chkGames" value="Games" ><label for="chkGames">Games</label>
+        <input type="checkbox" name="chkNews" id="chkNews" value="News" ><label for="chkNews">Noticias</label>
+        <br>
+        <label for="selEstado">Estado:</label>
+        <select name="selEstado" id="selEstado">
+            <option value="">Selecione</option>
+
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+            </optgroup>
+                <optgroup label="Região Nordeste">
+                <option value="PE">Pernambuco</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+            </optgroup>
+                <optgroup label="Região Sul">
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+            </optgroup> 
+        </select>
+
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url">
+        <br>
+        <input type="image" src="" alt="" style="width: 50px; height: 50px;">
+        
+        <br>
+        <label for="txtCor">Cor Favorita:</label>
+        <input type="color" name="txtCor" id="txtCor">
+        <br>
+        <label>Observações</label>
+        <textarea name="txtObs" id="txtObs" cols="10" placeholder="Digite suas observações aqui..."></textarea>
+
+        <br>
+        <input type="submit">
+    </form>
+   
+</body>
+</html>

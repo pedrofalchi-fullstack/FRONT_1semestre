@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const data = new Date(); // uma nova instância
+
+        //data.getDay - retorna o dia da semana
+        //data.getMonth - retorna o mês
+        //data.getYear - retorna o ano
+        //data.getFullYear - retorna o ano completo
+
+        data.getDate();
+        mes = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+        ano = data.getFullYear();
+        dia = data.getDay();
+
+        document.write( dia + "/" + mes[data.getMonth()] + "/" + ano); //formato personalizado
+
+        document.write("<br>");
+
+        data2 = data.toLocaleDateString(); //formato local
+
+        document.write(data2);
+
+        document.write("<br>");
+
+        document.write(data.getDate()); //data de hoje
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

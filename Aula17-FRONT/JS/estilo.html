@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sla {
+            height: 80px;
+            width: 80px;
+            background-color: #CCC;
+            display: none;
+        }
+    </style>
+    <script>
+        function exibir(){
+            const Div = document.getElementById("sla");
+            Div.style.display = (Div.style.display == 'none') ? 'block' :  'none'
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onmouseover="exibir()" onmouseout="exibir()">Link</a>
+    <div id="sla"></div>
+</body>
+</html>
+ 

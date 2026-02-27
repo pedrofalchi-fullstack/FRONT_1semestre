@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloLG.css">
+    <link rel="stylesheet" href="css/estiloMD.css">
+    <link rel="stylesheet" href="css/estiloSM.css">
+    <link rel="stylesheet" href="css/estiloXL.css">
+    <link rel="stylesheet" href="css/estiloXS.css">
+    <title>Tamanho de telas</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 class="xsTitulo">Extra Small</h1>
+            <h1 class="smTitulo">Small</h1>
+            <h1 class="mdTitulo">Medium</h1>
+            <h1 class="lgTitulo">Large</h1>
+            <h1 class="xlTitulo">Extra Large</h1>
+        </header>
+        <picture>
+            <source media="(max-width: 599.9px)" srcset="imagens/img320.png">
+            <source media="(min-width: 600px) and (max-width: 767.9px)" srcset="imagens/img600.png">
+            <source media="(min-width: 768px) and (max-width: 991.9px)" srcset="imagens/img768.png">
+            <source media="(min-width: 992px) and (max-width: 1199.9px)" srcset="imagens/img992.png">
+            <source media="(min-width: 1200px)" srcset="imagens/img1200.png">
+            <img src="imagens/img425.png" alt="Imagem responsiva">
+        </picture>
+    </div>
+</body>
+</html>

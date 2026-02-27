@@ -1,0 +1,44 @@
+
+.menuVertical{
+    width: 200px;
+    height: 149px;
+    background-color: #ff0000;
+    border: 1px solid #000000;
+    padding: 0px;
+}
+
+.menuHorizontal{
+    width: 500px;
+    height: 149px;
+    background-color: #0000ff;
+    border: 1px solid #000000;
+}
+
+.menuVertical ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.menuVertical ul li{
+    height: 29px;
+    border-bottom: 1px solid #000000;
+}
+
+.menuVertical ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    border-left: 8px solid #ffff00;
+    padding-left:10px;
+    line-height: 29px;
+    display: block;
+}
+
+.menuVertical ul li a:hover{
+    background-color: #ff0;
+    color: #000;
+    border-left: 8px solid #ff0000;
+}
+
+.menuVertical ul li:last-child{
+    border-bottom: none;
+}

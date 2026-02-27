@@ -1,0 +1,16 @@
+/* SMall devices (portrait tablets and large phones, 600px and up) */
+@media only screen and ((min-width: 600px) and (max-width: 767.9px)) {
+    body {
+        background-color: lightgreen;
+    }
+    .smTitulo{
+        display: block;
+    }
+    .xsTitulo, .mdTitulo, .lgTitulo, .xlTitulo{
+        display: none;
+    }
+    header{
+        height: 130px;
+        background-color: #2a5503;
+    }
+}

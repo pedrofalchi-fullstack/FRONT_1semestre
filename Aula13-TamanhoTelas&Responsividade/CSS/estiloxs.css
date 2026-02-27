@@ -1,0 +1,16 @@
+/* eXtra Small devices (phones, 600px and down) */
+@media only screen and (max-width: 599.9px) {
+    body {
+        background-color: lightblue;
+    }
+    .xsTitulo{
+        display: block;
+    }
+    .smTitulo, .mdTitulo, .lgTitulo, .xlTitulo{
+        display: none;
+    }
+    header{
+        height: 100px;
+        background-color: blue;
+    }
+}

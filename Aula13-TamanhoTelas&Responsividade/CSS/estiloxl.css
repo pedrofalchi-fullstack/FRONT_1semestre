@@ -1,0 +1,15 @@
+/*  eXtra Large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: #600311;
+    }
+    .xlTitulo{
+        display: block;
+    }
+    .xsTitulo, .mdTitulo, .lgTitulo, .smTitulo{
+        display: none;
+    }
+    header{
+        background-color: #d4899c;
+    }
+}

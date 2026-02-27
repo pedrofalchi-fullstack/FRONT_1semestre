@@ -1,0 +1,15 @@
+/* LarGe devices (laptops/desktops, 992px and up) */
+@media only screen and ((min-width: 992px) and (max-width: 1199.9px)) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+    .lgTitulo{
+        display: block;
+    }
+    .xsTitulo, .mdTitulo, .smTitulo, .xlTitulo{
+        display: none;
+    }
+    header{
+        background-color: #796901;
+    }
+}

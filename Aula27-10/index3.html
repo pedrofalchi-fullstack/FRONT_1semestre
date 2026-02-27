@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const hora = new Date(); // uma nova instância
+        h = hora.getHours();
+        min = hora.getMinutes();
+        s = hora.getSeconds();
+
+        document.write( h + ":" + min + ":" + s); //formato de horas + min + seg
+
+        document.write("<br>");
+
+        document.write(hora.toLocaleTimeString()); //formato local de horas
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

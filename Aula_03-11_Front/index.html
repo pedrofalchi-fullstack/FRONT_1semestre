@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trabalhando com Arrays</h1>
+    <h2>Exemplo 1: Criando e Acessando Arrays</h2>
+    <p id="exemplo01"></p>
+
+    <h2>Exemplo 2: Método sort()</h2>
+    <p id="exemplo02"></p>
+
+    <h2>Exemplo 3: Método reverse()</h2>
+    <p id="exemplo03"></p>
+
+    <h2>Exemplo 4: Inserindo valores num Array</h2>
+    <p id="exemplo04"></p>
+
+    <h2>Exemplo 5: Modificando um determinado índice</h2>
+    <p id="exemplo05"></p>
+
+    <h2>Exemplo 6: Escrevendo em ordem alfabética Z-A</h2>
+    <p id="exemplo06"></p>
+
+    <h2>Exemplo 7: Apagando o último índice</h2>
+    <p id="exemplo07"></p>
+
+    <h2>Exemplo 8:Apagando um índice específico</h2>
+    <p id="exemplo08"></p>
+
+    <script>
+        //criando o array
+        const meses1 = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+
+        //acessando o array
+        document.getElementById('exemplo01').innerText = meses1;
+
+
+        //ordenando o array em ordem alfabética
+        const meses2 = ['Março', 'Janeiro', 'Fevereiro', 'Dezembro', 'Novembro', 'Outubro', 'Setembro', 'Agosto', 'Julho', 'Junho', 'Maio', 'Abril'];
+        meses2.sort(); 
+        document.getElementById('exemplo02').innerText = meses2;
+
+
+        //invertendo a ordem do array
+        const meses3 = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+        meses3.reverse(); 
+        document.getElementById('exemplo03').innerText = meses3;
+
+
+        //inserindo valores no array, a partir do final
+        const meses4 = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'];
+        meses4.push('Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
+        document.getElementById('exemplo04').innerText = meses4;
+        
+        //modificando o valor do índice 3
+        const meses5 = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+        meses5[3] = 'Abril Modificado';
+        document.getElementById('exemplo05').innerText = meses5;
+
+        const meses6 = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];           
+        //ordenando o array em ordem alfabética e depois invertendo a ordem
+        meses6.sort();
+        meses6.reverse();
+        document.getElementById('exemplo06').innerText = meses6;
+
+        const meses7 = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+        //apagando o último índice do array 
+        meses7.pop();
+        document.getElementById('exemplo07').innerText = meses7;
+
+        const meses8 = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+        delete meses8[5]; //apagando o índice 5 (Junho)
+        meses8.splice(5, 1); //apaga o índice e reordena o array
+        document.getElementById('exemplo08').innerText = meses8;
+
+
+    </script>
+    
+</body>
+</html>
